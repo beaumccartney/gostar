@@ -1,4 +1,4 @@
-module github.com/delaneyj/gostar
+module github.com/beaumccartney/gostar
 
 go 1.22.1
 
