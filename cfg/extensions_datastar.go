@@ -25,12 +25,6 @@ var DatastarExtensions = []*pb.Attribute{
 		Type:        AttributeTypeCustom(true, AttributeTypeString()),
 	},
 	{
-		Name:        "DatastarModel",
-		Key:         "model",
-		Description: "Sets the value of the element",
-		Type:        AttributeTypeCustom(false, AttributeTypeString()),
-	},
-	{
 		Name:        "DatastarText",
 		Key:         "text",
 		Description: "Sets the textContent of the element",
@@ -57,26 +51,8 @@ var DatastarExtensions = []*pb.Attribute{
 			},
 		),
 	},
-	{
-		Name:        "DatastarFocus",
-		Key:         "focus",
-		Description: "Sets the focus of the element",
-		Type:        AttributeTypeCustom(true, AttributeTypeBool()),
-	},
 
 	// Backend
-	{
-		Name:        "DatastarHeader",
-		Key:         "header",
-		Description: "Sets the header of for fetch requests",
-		Type:        AttributeTypeCustom(true, AttributeTypeString()),
-	},
-	{
-		Name:        "DatastarFetchIndicator",
-		Key:         "fetch-indicator",
-		Description: "Sets the indicator selector for fetch requests",
-		Type:        AttributeTypeCustom(false, AttributeTypeString()),
-	},
 
 	// Visibility
 	{
@@ -90,12 +66,6 @@ var DatastarExtensions = []*pb.Attribute{
 		Key:         "intersects",
 		Description: "Triggers the callback when the element intersects the viewport",
 		Type:        AttributeTypeCustom(false, AttributeTypeString()),
-	},
-	{
-		Name:        "DatastarTeleport",
-		Key:         "teleport",
-		Description: "Teleports the element to the given selector",
-		Type:        AttributeTypeCustom(false, AttributeTypeBool()),
 	},
 	{
 		Name:        "DatastarScrollIntoView",
