@@ -540,7 +540,7 @@ func (e *{{$elStructName}}) CustomDataRemove(key string) *{{$elStructName}} {
                     e.StringAttributes = treemap.New[string,string]()
                 }
                 {{if $custom.HasKey}}
-                key =  fmt.Sprintf("data-{{.Key}}-%s", key)
+                key =  fmt.Sprintf("data-{{.Key}}:%s", key)
                 {{else}}
                 key := "data-{{.Key}}"
                 {{end}}
